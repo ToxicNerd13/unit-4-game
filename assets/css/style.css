@@ -17,10 +17,20 @@ body {
     height: 100px;
     width: 100px;
 }
+#random-number {
+    background: royalblue;
+    font-weight: bold;
+    font-size: 30px;
+    width: 125px;
+    height: 120px;
+    padding-top: 45px;
+    margin: 0 auto 20px;
+}
 #wins-losses {
     font-weight: bold;
     background: royalblue;
     width: 125px;
+    height: 120px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0 auto 20px;
