@@ -21,7 +21,7 @@ function numGenerator(min, max) {
 function crystalValues() {
     $("img").each(function() {
         // Give the crystals in the img tag a value attribute of a random number
-        $(this).attr("value", numGenerator(1, 12))
+        $(this).attr("data-value", numGenerator(1, 12))
     });
 };
 crystalValues();
@@ -35,7 +35,7 @@ function newGame() {
 
 // When user clicks a crystal image, its point value is added to the total score
 $(".crystal").click(function() {
-    score += parseInt($(this).attr("value"));
+    score += parseInt($(this).attr("data-value"));
     $("#score-counter").text(score);
 
     if (score === randomNum) {
