@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 12px;
+}
 body {
   background-image: url(../images/cave.png);
   background-color: LightSteelBlue;
@@ -8,89 +11,132 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-size: 12px;
 }
 #wins-losses {
   font-weight: bold;
   background: royalblue;
-  padding: 8px;
+  padding: .8rem;
   margin: 0 auto;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: 2px solid black;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 1.8rem;
+  top: 1.8rem;
 }
 #wins-losses p {
-  margin: 5px auto;
+  margin: .5rem auto;
 }
 #page-title {
   font-family: "Bungee", cursive;
   color: white;
   text-shadow: 5px 5px black;
-  font-size: 4.5vw;
+  font-size: 3.5rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 #game-info {
   height: 100%;
-  margin: 4vh auto 0;
+  margin: 0 auto;
   overflow: hidden;
-  /* display: flex;
-  justify-content: space-evenly; */
   align-items: center;
 }
 #rules {
   background: powderblue;
-  width: 40vw;
+  width: 40%;
   height: 100%;
-  font-size: 1.3vw;
+  font-size: 1.3rem;
   font-family: "Mate SC", serif;
   border: 2px solid black;
-  margin: 0 auto 15vh;
+  margin: 0 auto 1.8rem;
 }
 #rules ul {
-  padding: 15px 15px 15px 20px;
-  margin: 0px;
+  padding: 1.2rem 1rem 1.2rem 2rem;
+  margin: 0rem;
 }
-#column {
+#row {
   display: flex;
   justify-content: center;
 }
 #goal {
   background: royalblue;
   font-weight: bold;
-  font-size: 30px;
-  width: 15vw;
-  /* height: 120px; */
+  font-size: 1.7rem;
+  width: 14%;
   text-align: center;
-  margin: 0 20px;
+  margin: 0 1.6rem;
   border: 2px solid black;
 }
 #total-score {
   background: royalblue;
-  width: 15vw;
-  padding: 10px;
+  width: 14%;
   text-align: center;
   border: 2px solid black;
   margin: 0 20px;
 }
-#score-counter {
-  font-size: 30px;
+#total-score h3 {
   font-weight: bold;
+  font-size: 1.7rem;
+  margin: 2rem 0;
+}
+#score-counter {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
 }
 #crystal-row {
-  margin-top: 5vh;
+  margin-top: 1.2rem;
   text-align: center;
 }
 .crystal {
-  height: 100px;
-  width: 100px;
+  height: 9.7rem;
+  width: 9.7rem;
+  margin: 2rem;
+  border: 2px solid black;
+  border-radius:150px;
+  box-shadow: 0 8px 14px 0 rgb(43, 42, 42), 0 8px 14px 0 rgb(43, 42, 42);
 }
 
 @media only screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  #wins-losses {
+    position: static;
+    padding: 0;
+  }
+  #wins-losses p {
+    display: inline;
+    font-size: 1.3rem;
+    margin: 0 2rem;
+  }
   #page-title {
-    font-size: 12vw;
+    margin-top: 1rem;
     line-height: 1.2;
+  }
+  #rules {
+    width: 90%;
+  }
+  #goal {
+    width: 40%;
+    height: 9rem;
+  }
+  #goal h3 {
+    margin: .9rem 0;
+  }
+  #total-score {
+    width: 40%;
+    height: 9rem;
+  }
+  #total-score h3 {
+    margin: .7rem 0;
+  }
+  #score-counter {
+    margin: .4rem 0;
+  }
+  .crystal {
+    width: 35%;
+    height: 10rem;
+    margin: .5rem;
   }
 }
