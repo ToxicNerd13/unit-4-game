@@ -30,6 +30,7 @@ function newGame() {
     score = 0;
     $("#score-counter").text(score);
     randomNum = numGenerator(19, 120);
+    $("#random-number").text(randomNum);
     crystalValues();
 }
 
